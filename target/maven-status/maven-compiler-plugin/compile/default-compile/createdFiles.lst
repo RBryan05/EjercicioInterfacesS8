@@ -1,7 +1,10 @@
+Modelos\Animales.class
 Modelos\Circulo.class
 Modelos\PagoConTargeta.class
 Interfaces\Trabajador.class
 Modelos\Diseñador.class
+Modelos\Persona.class
+Interfaces\Alimentacion.class
 Interfaces\Animal.class
 Interfaces\Vehiculo.class
 Modelos\Perro.class
