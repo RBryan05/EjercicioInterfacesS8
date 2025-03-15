@@ -14,6 +14,6 @@ public class Diseñador implements Trabajador<String> {
 
     @Override
     public String Trabajar() {
-        return "El diseñador empieza a crear la interfaz que la aplicacion tendra";
+        return "El diseñador empieza a crear la interfaz que la aplicacion tendra.";
     }
 }

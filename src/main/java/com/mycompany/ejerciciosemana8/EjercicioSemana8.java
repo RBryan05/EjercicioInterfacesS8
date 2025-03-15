@@ -6,6 +6,7 @@ package com.mycompany.ejerciciosemana8;
 
 import Interfaces.Animal;
 import Interfaces.Geometrica;
+import Interfaces.Ordenable;
 import Interfaces.Pago;
 import Interfaces.Trabajador;
 import Interfaces.Vehiculo;
@@ -15,6 +16,7 @@ import Modelos.Coche;
 import Modelos.Desarrollador;
 import Modelos.Diseñador;
 import Modelos.Gato;
+import Modelos.ListaNumeros;
 import Modelos.PagoConEfectivo;
 import Modelos.PagoConTargeta;
 import Modelos.Perro;
@@ -42,8 +44,11 @@ public class EjercicioSemana8 {
         Pago<String> pagoConTargeta = new PagoConTargeta();
         
         //Trabajador
-        Trabajador<String> Desarrollador = new Desarrollador();
-        Trabajador<String> Diseñador = new Diseñador();
+        Trabajador<String> desarrollador = new Desarrollador();
+        Trabajador<String> diseñador = new Diseñador();
+        
+        //Ordenable
+        Ordenable<String> listaNumeros = new ListaNumeros();
         
         //Perro
         System.out.println("Comportamiento del Perro:");
@@ -95,8 +100,11 @@ public class EjercicioSemana8 {
         scanner.close();
         
         //Desarrollador
-        System.out.println("\n"+Desarrollador.Trabajar());    
+        System.out.println("\n"+desarrollador.Trabajar());    
         //Diseñador
-        System.out.println("\n"+Diseñador.Trabajar());
+        System.out.println("\n"+diseñador.Trabajar());
+        
+        //Orenar nuemros usando sort
+        System.out.println("\n" + listaNumeros.Ordenar());
     }
 }

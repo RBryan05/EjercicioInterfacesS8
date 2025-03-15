@@ -5,8 +5,10 @@ Modelos\Diseñador.class
 Interfaces\Animal.class
 Interfaces\Vehiculo.class
 Modelos\Perro.class
+Interfaces\Ordenable.class
 Modelos\Rectangulo.class
 Interfaces\Geometrica.class
+Modelos\ListaNumeros.class
 Modelos\PagoConEfectivo.class
 Modelos\Gato.class
 Interfaces\Pago.class

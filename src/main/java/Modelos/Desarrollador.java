@@ -14,6 +14,6 @@ public class Desarrollador implements Trabajador<String> {
 
     @Override
     public String Trabajar() {
-        return "El desarrollador empieza a programa el Backend del proyecto";
+        return "El desarrollador empieza a programa el Backend del proyecto.";
     }
 }
