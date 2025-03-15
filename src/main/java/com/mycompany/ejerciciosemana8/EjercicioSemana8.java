@@ -7,6 +7,7 @@ package com.mycompany.ejerciciosemana8;
 import Interfaces.Alimentacion;
 import Interfaces.Animal;
 import Interfaces.Geometrica;
+import Interfaces.Notificable;
 import Interfaces.Ordenable;
 import Interfaces.Pago;
 import Interfaces.Trabajador;
@@ -15,6 +16,7 @@ import Modelos.Animales;
 import Modelos.Bicicleta;
 import Modelos.Circulo;
 import Modelos.Coche;
+import Modelos.CorreoElectronico;
 import Modelos.Desarrollador;
 import Modelos.Diseñador;
 import Modelos.Gato;
@@ -24,6 +26,7 @@ import Modelos.PagoConTargeta;
 import Modelos.Perro;
 import Modelos.Persona;
 import Modelos.Rectangulo;
+import Modelos.SMS;
 
 /**
  *
@@ -49,12 +52,23 @@ public class EjercicioSemana8 {
         Trabajador<String> desarrollador = new Desarrollador();
         Trabajador<String> diseñador = new Diseñador();
         
+        //Geométrica
+        double radio = 4;
+        Geometrica<Double> circulo = new Circulo(radio);
+        double ancho = 5;
+        double alto = 3;
+        Geometrica<Double> rectangulo = new Rectangulo(ancho, alto);
+        
         //Ordenable
         Ordenable<String> listaNumeros = new ListaNumeros();
         
         //Alimentacion
         Alimentacion<String> persona = new Persona();
         Alimentacion<String> animal = new Animales();
+        
+        //Notificable
+        Notificable<String> correoElectronico = new CorreoElectronico();
+        Notificable<String> sms = new SMS();
         
         //Perro
         System.out.println("Comportamiento del Perro:");
@@ -65,6 +79,8 @@ public class EjercicioSemana8 {
         System.out.println(gato.hacerSonido());
         System.out.println(gato.mover());
         
+        System.out.println("\n--------------------------------------------------");
+        
         //Coche
         System.out.println("\nComportamiento del Coche:");
         System.out.println(coche.Arrancar());
@@ -74,25 +90,17 @@ public class EjercicioSemana8 {
         System.out.println(bicicleta.Arrancar());
         System.out.println(bicicleta.Detener());
         
+        System.out.println("\n--------------------------------------------------");
+        
         // Pago con Targeta
         System.out.println("\nPago con targeta:");
         System.out.println(pagoConTargeta.ProcesarPago(25.75));
         // Pago en Efectico
         System.out.println("\nPago en efectivo:");
         System.out.println(pagoConEfectivo.ProcesarPago(5.99));
-
-        // Ingresar datos para Circulo
-        System.out.print("\nIngrese el radio del circulo: ");
-        double radio = 4;
-        Geometrica<Double> circulo = new Circulo(radio);
-
-        // Ingresar datos para Rectangulo
-        System.out.print("\nIngrese el ancho del rectangulo: ");
-        double ancho = 5;
-        System.out.print("\nIngrese el alto del rectangulo: ");
-        double alto = 3;
-        Geometrica<Double> rectangulo = new Rectangulo(ancho, alto);
         
+        System.out.println("\n--------------------------------------------------");
+
         //Circulo
         System.out.println("\nLos datos del circulo son:");
         System.out.println("Area: " + circulo.Area());
@@ -102,17 +110,30 @@ public class EjercicioSemana8 {
         System.out.println("Area: " + rectangulo.Area());
         System.out.println("Perímetro: " + rectangulo.Perimetro());
         
+        System.out.println("\n--------------------------------------------------");
+        
         //Desarrollador
         System.out.println("\n"+desarrollador.Trabajar());    
         //Diseñador
         System.out.println("\n"+diseñador.Trabajar());
         
+        System.out.println("\n--------------------------------------------------");
+        
         //Orenar nuemros usando sort
         System.out.println("\n" + listaNumeros.Ordenar());
+        
+        System.out.println("\n--------------------------------------------------");
         
         //Persona
         System.out.println("\n" + persona.Comer());
         //Animal
         System.out.println("\n" + animal.Comer());
+        
+        System.out.println("\n--------------------------------------------------");
+        
+        //Correo electrónico
+        System.out.println("\n" + correoElectronico.EnviarNotificacion());
+        //SMS
+        System.out.println("\n" + sms.EnviarNotificacion());
     }
 }

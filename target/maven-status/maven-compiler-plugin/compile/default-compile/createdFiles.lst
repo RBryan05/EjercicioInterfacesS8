@@ -1,5 +1,6 @@
 Modelos\Animales.class
 Modelos\Circulo.class
+Modelos\CorreoElectronico.class
 Modelos\PagoConTargeta.class
 Interfaces\Trabajador.class
 Modelos\Diseñador.class
@@ -17,5 +18,7 @@ Modelos\Gato.class
 Interfaces\Pago.class
 Modelos\Bicicleta.class
 Modelos\Desarrollador.class
+Interfaces\Notificable.class
 Modelos\Coche.class
+Modelos\SMS.class
 com\mycompany\ejerciciosemana8\EjercicioSemana8.class
