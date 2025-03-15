@@ -2,6 +2,7 @@ C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\ja
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Interfaces\Alimentacion.java
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Interfaces\Animal.java
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Interfaces\ComparableObjeto.java
+C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Interfaces\Descontable.java
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Interfaces\Geometrica.java
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Interfaces\Notificable.java
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Interfaces\Ordenable.java
@@ -14,6 +15,8 @@ C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\ja
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Modelos\Coche.java
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Modelos\CorreoElectronico.java
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Modelos\Desarrollador.java
+C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Modelos\DescuentoFijo.java
+C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Modelos\DescuentoPorcentaje.java
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Modelos\Diseñador.java
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Modelos\Gato.java
 C:\Users\bryan\OneDrive\Documentos\NetBeansProjects\EjercicioSemana8\src\main\java\Modelos\ListaNumeros.java

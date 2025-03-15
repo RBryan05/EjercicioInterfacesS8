@@ -5,9 +5,11 @@ Modelos\Persona.class
 Interfaces\Animal.class
 Interfaces\Vehiculo.class
 Modelos\Producto.class
+Modelos\DescuentoFijo.class
 Modelos\ListaNumeros.class
 Modelos\PagoConEfectivo.class
 Interfaces\Pago.class
+Modelos\DescuentoPorcentaje.class
 Modelos\Desarrollador.class
 Interfaces\Notificable.class
 Modelos\Coche.class
@@ -20,6 +22,7 @@ Modelos\Perro.class
 Interfaces\Ordenable.class
 Modelos\Rectangulo.class
 Interfaces\Geometrica.class
+Interfaces\Descontable.class
 Modelos\Gato.class
 Modelos\Bicicleta.class
 Modelos\SMS.class

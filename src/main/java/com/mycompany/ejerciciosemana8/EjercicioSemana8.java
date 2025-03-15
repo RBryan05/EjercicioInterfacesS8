@@ -6,6 +6,7 @@ package com.mycompany.ejerciciosemana8;
 import Interfaces.Alimentacion;
 import Interfaces.Animal;
 import Interfaces.ComparableObjeto;
+import Interfaces.Descontable;
 import Interfaces.Geometrica;
 import Interfaces.Notificable;
 import Interfaces.Ordenable;
@@ -18,6 +19,8 @@ import Modelos.Circulo;
 import Modelos.Coche;
 import Modelos.CorreoElectronico;
 import Modelos.Desarrollador;
+import Modelos.DescuentoFijo;
+import Modelos.DescuentoPorcentaje;
 import Modelos.Diseñador;
 import Modelos.Gato;
 import Modelos.ListaNumeros;
@@ -70,6 +73,13 @@ public class EjercicioSemana8 {
         //Notificable
         Notificable<String> correoElectronico = new CorreoElectronico();
         Notificable<String> sms = new SMS();
+
+        //Comparable
+        ComparableObjeto<String> laptop = new Producto("Laptop", 1200.50);
+
+        //Descontable
+        Descontable<String> descuentoPorcentaje = new DescuentoPorcentaje();
+        Descontable<String> descuentoFijo = new DescuentoFijo();
 
         //Perro
         System.out.println("Comportamiento del Perro:");
@@ -140,8 +150,14 @@ public class EjercicioSemana8 {
         System.out.println("\n--------------------------------------------------");
 
         //Comparar
-        ComparableObjeto<String> laptop = new Producto("Laptop", 1200.50);
         Producto smartPhone = new Producto("Smartphone", 800.99);
         System.out.println("\n" + laptop.Comparar(smartPhone));
+
+        System.out.println("\n--------------------------------------------------");
+
+        //Descuento por Porcentaje
+        System.out.println("\n" + descuentoPorcentaje.CalcularDesceunto(smartPhone.getPrecio()));
+        //Descuento Fijo
+        System.out.println("\n" + descuentoFijo.CalcularDesceunto(smartPhone.getPrecio()) + "\n");
     }
 }
