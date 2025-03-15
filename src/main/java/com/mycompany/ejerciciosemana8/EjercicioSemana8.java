@@ -7,10 +7,13 @@ package com.mycompany.ejerciciosemana8;
 import Interfaces.Animal;
 import Interfaces.Geometrica;
 import Interfaces.Pago;
+import Interfaces.Trabajador;
 import Interfaces.Vehiculo;
 import Modelos.Bicicleta;
 import Modelos.Circulo;
 import Modelos.Coche;
+import Modelos.Desarrollador;
+import Modelos.Diseñador;
 import Modelos.Gato;
 import Modelos.PagoConEfectivo;
 import Modelos.PagoConTargeta;
@@ -37,6 +40,10 @@ public class EjercicioSemana8 {
         //Pago
         Pago<String> pagoConEfectivo = new PagoConEfectivo();
         Pago<String> pagoConTargeta = new PagoConTargeta();
+        
+        //Trabajador
+        Trabajador<String> Desarrollador = new Desarrollador();
+        Trabajador<String> Diseñador = new Diseñador();
         
         //Perro
         System.out.println("Comportamiento del Perro:");
@@ -66,14 +73,14 @@ public class EjercicioSemana8 {
         Scanner scanner = new Scanner(System.in);
 
         // Ingresar datos para Circulo
-        System.out.print("Ingrese el radio del circulo: ");
+        System.out.print("\nIngrese el radio del circulo: ");
         double radio = scanner.nextDouble();
         Geometrica<Double> circulo = new Circulo(radio);
 
         // Ingresar datos para Rectangulo
-        System.out.print("Ingrese el ancho del rectangulo: ");
+        System.out.print("\nIngrese el ancho del rectangulo: ");
         double ancho = scanner.nextDouble();
-        System.out.print("Ingrese el alto del rectangulo: ");
+        System.out.print("\nIngrese el alto del rectangulo: ");
         double alto = scanner.nextDouble();
         Geometrica<Double> rectangulo = new Rectangulo(ancho, alto);
         
@@ -81,12 +88,15 @@ public class EjercicioSemana8 {
         System.out.println("\nLos datos del circulo son:");
         System.out.println("Area: " + circulo.Area());
         System.out.println("Perímetro: " + circulo.Perimetro());
-
         //Rectangulo
         System.out.println("\nLos datos del rectangulo son:");
         System.out.println("Area: " + rectangulo.Area());
         System.out.println("Perímetro: " + rectangulo.Perimetro());
-
         scanner.close();
+        
+        //Desarrollador
+        System.out.println("\n"+Desarrollador.Trabajar());    
+        //Diseñador
+        System.out.println("\n"+Diseñador.Trabajar());
     }
 }

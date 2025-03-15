@@ -1,5 +1,7 @@
 Modelos\Circulo.class
 Modelos\PagoConTargeta.class
+Interfaces\Trabajador.class
+Modelos\Diseñador.class
 Interfaces\Animal.class
 Interfaces\Vehiculo.class
 Modelos\Perro.class
@@ -9,5 +11,6 @@ Modelos\PagoConEfectivo.class
 Modelos\Gato.class
 Interfaces\Pago.class
 Modelos\Bicicleta.class
+Modelos\Desarrollador.class
 Modelos\Coche.class
 com\mycompany\ejerciciosemana8\EjercicioSemana8.class
